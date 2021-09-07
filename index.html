@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
     ul{
         list-style-type: none;
@@ -14,6 +16,7 @@
         color: black;
         text-align: center;
         padding: 14px 16px;
+        text-decoration: none;
     }
     .img-container{
         margin :auto;
@@ -24,25 +27,34 @@
         align-items: center;
         height: 150px;
         padding-top: 250px;
-        padding-left: 30px;
+        padding-left: 25px;
         
     }
     #search-bar{
+        align-items: center;
         width: 500px;
         height: 32px;
+        margin: 10px 0px 20px 0px;
     }
     .main{
         text-align: center;
     }
+    .left-header{
+        font-size: 14px;
+        font-family: arial, sans-serif;
+        color: #222;
+    }
 </style>
 <body>
     <ul>
+        <li><a href="#"><i class="material-icons">apps</i></a></li>
         <li><a href="#">Gmail</a></li>
         <li><a href="#">Images</a></li>
-        <li style="float:left"><a href="#">About</a></li>
-        <li style="float:left"><a href="#">Store</a></li>
-
+        <li class="left-header" style="float:left"><a href="#">About</a></li>
+        <li class="left-header" style="float:left"><a href="#">Store</a></li>
+    </ul>
       <div class="main">
         <img class="img-container" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/>
         <div class="search"><input id="search-bar" type="text"></div>      
 </body>
+</html>
