@@ -27,7 +27,7 @@
         align-items: center;
         height: 150px;
         padding-top: 250px;
-        padding-left: 25px;
+        padding-left: 75px;
         
     }
     #search-bar{
@@ -44,8 +44,17 @@
         font-family: arial, sans-serif;
         color: #222;
     }
+    #search-icon{
+        position: relative;
+        top: 10px;
+    }
+    .search-buttons{
+        display: flex;
+        justify-content: center;
+    }
 </style>
 <body>
+    <div>
     <ul>
         <li><a href="#"><i class="material-icons">apps</i></a></li>
         <li><a href="#">Gmail</a></li>
@@ -53,8 +62,13 @@
         <li class="left-header" style="float:left"><a href="#">About</a></li>
         <li class="left-header" style="float:left"><a href="#">Store</a></li>
     </ul>
+    </div>
       <div class="main">
         <img class="img-container" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/>
-        <div class="search"><input id="search-bar" type="text"></div>      
+        <div class="search"><i class="material-icons" id="search-icon" style="font-size:36px">search</i><input id="search-bar" type="text"></div>
+        <div class="search-buttons">
+            <input type="submit" value="Google Search">
+            <input type="submit" value="I'm Feeling Lucky">
+        </div>  
 </body>
 </html>
