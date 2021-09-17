@@ -48,9 +48,27 @@
         position: relative;
         top: 10px;
     }
+    .search-buttons ul li {
+        padding: 10px 10px 10px 10px;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        margin: 11px 6px 11px 6px;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        padding: 5px 16px 5px 16px;
+        height: 36px;
+        align-items: flex-start;
+
+    }
     .search-buttons{
         display: flex;
         justify-content: center;
+    }
+    .footer-left{
+        float: left;
+        margin-top: 500px;
+        font-size: 14px;
+        font-family: arial, sans-serif;
     }
 </style>
 <body>
@@ -67,8 +85,17 @@
         <img class="img-container" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/>
         <div class="search"><i class="material-icons" id="search-icon" style="font-size:36px">search</i><input id="search-bar" type="text"></div>
         <div class="search-buttons">
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky">
-        </div>  
-</body>
+            <ul>
+             <li><a href="#">I'm Feeling Lucky</a></li>
+             <li><a href="#">Google Search</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="footer-left">
+      <ul>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search Works</a></li>
+      </ul>
+    </body>
 </html>
